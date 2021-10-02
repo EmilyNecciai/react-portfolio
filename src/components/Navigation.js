@@ -8,10 +8,35 @@
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
-<Nav
-pages={pages}
+/* <Nav
+pages={pages} */
 // setCurrentCategory={setCurrentCategory}
 // currentCategory={currentCategory}
 // contactSelected={contactSelected}
 // setContactSelected={setContactSelected}
-></Nav>
+// ></Nav>
+
+import React from "react";
+
+function Navigation() {
+  return (
+    <div className="tabs is-centered">
+      <ul>
+        <li className="is-active">
+          <a>About</a>
+        </li>
+        <li>
+          <a>Contact</a>
+        </li>
+        <li>
+          <a>Portfolio</a>
+        </li>
+        <li>
+          <a>Resume</a>
+        </li>
+      </ul>
+    </div>
+  );
+}
+
+export default Navigation;

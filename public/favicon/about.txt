@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Voltaire
+- Font Author: Copyright (c) 2011, Sorkin Type Co (www.sorkintype.com) with Reserved Font Names "Voltaire" and "Voltaire One".
+- Font Source: http://fonts.gstatic.com/s/voltaire/v10/1Pttg8PcRfSblAvGvQooYKVnBOif.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

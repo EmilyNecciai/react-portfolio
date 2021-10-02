@@ -1,26 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
+import Header from './components/Header';
 // import Navigation from './components/Navigation';
-// import About from './components/About';
+import About from './components/About';
+import Footer from './components/Footer'
 // import Gallery from './components/Gallery';
 // import ContactForm from './components/Contact';
 
 function App() {
-  const [pages] = useState([
-    { name: 'portraits', description: 'Portraits of people in my life' },
-    { name: 'food', description: 'Delicious delicacies' },
-    { name: 'landscape', description: 'Fields, farmhouses, waterfalls, and the beauty of nature' },
-  ]);
-
-  // const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
-  // const [contactSelected, setContactSelected] = useState(false);
-
   return (
     <div>
-
+      <Header></Header>
       <main>
-        <p>Hi!</p>
+        <About></About>
       </main>
+      <Footer></Footer>
     </div>
   );
 }
