@@ -31,3 +31,7 @@ main {
   width: 250px;
 }
 
+.label {
+  text-align: left;
+}
+
