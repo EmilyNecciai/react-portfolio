@@ -1,10 +1,13 @@
 import React from 'react';
 import Header from './components/Header';
-// import Navigation from './components/Navigation';
 import About from './components/About';
-import Footer from './components/Footer'
-// import Gallery from './components/Gallery';
-// import ContactForm from './components/Contact';
+import Resume from './components/Resume';
+import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
+
+
+
+
 
 function App() {
   return (
@@ -12,6 +15,8 @@ function App() {
       <Header></Header>
       <main>
         <About></About>
+        <Portfolio></Portfolio>
+        <Resume></Resume>
       </main>
       <Footer></Footer>
     </div>

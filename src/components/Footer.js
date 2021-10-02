@@ -1,7 +1,6 @@
 //Needs links to my Github, Linkedin, and a Third Platform?
 
 import React from "react";
-import Navigation from "./Navigation";
 
 function Footer() {
   return (
@@ -15,12 +14,12 @@ function Footer() {
           .
           <hr />
           <a
-            href="http://opensource.org/licenses/mit-license.php"
+            href="https://www.linkedin.com/in/emilynecciai/"
             target="_blank"
           >
             LinkedIn
           </a>{" "}
-          |{" "}
+          |{" "}{" "}
           <a href="https://www.ithnk.org/" target="_blank">
             Technical Writing Professional Site
           </a>

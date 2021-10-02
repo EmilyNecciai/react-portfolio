@@ -32,7 +32,7 @@ function Navigation() {
           <a>Portfolio</a>
         </li>
         <li>
-          <a>Resume</a>
+          <a>Résumé</a>
         </li>
       </ul>
     </div>
