@@ -7,24 +7,31 @@
 
 import React from "react";
 
-function Navigation() {
-
-
+function Navigation(props) {
+  const tabs = ["About", "Portfolio", "Contact", "Resume"];
   return (
     <div className="tabs is-centered">
-      <ul>
-        <li className="is-active">
-          <a>About</a>
-        </li>
-        <li>
-          <a>Contact</a>
-        </li>
-        <li>
-          <a>Portfolio</a>
-        </li>
-        <li>
-          <a>Résumé</a>
-        </li>
+      <ul className="nav nav-tabs">
+        {tabs.map((tab) => (
+          <li
+            className={
+              props.currentPage === tab ? "nav-item is-active" : "nav-item"
+            }
+            key={tab}
+          >
+            <a
+              href={"#" + tab.toLowerCase()}
+              // Whenever a tab is clicked on,
+              // the current page is set through the handlePageChange props.
+              onClick={() => props.handlePageChange(tab)}
+              className={
+                props.currentPage === tab ? "nav-link active" : "nav-link"
+              }
+            >
+              {tab}
+            </a>
+          </li>
+        ))}
       </ul>
     </div>
   );

@@ -26,13 +26,34 @@ function Project(props) {
                   </div>
                 </div>
 
-                <div className="content">
+                <div className="content has-text-left">
                   {project.description}
                   <br />
-                  <div className="content">{project.languages}</div>
-                  <a href={project.repo} target="_blank">
-                    See the Repo!
-                  </a>
+                  <br />
+                  <div className="content is-family-code">
+                    Languages: {project.languages}
+                    <br />
+                    NPM Packages: {project.packages}
+                  </div>
+                  <div class="card">
+                    <footer class="card-footer">
+                      <a
+                        href={project.repo}
+                        className="card-footer-item"
+                        target="_blank"
+                      >
+                        See the Repo!
+                      </a>
+                      <br />
+                      <a
+                        href={project.live}
+                        className="card-footer-item"
+                        target="_blank"
+                      >
+                        See the Live Site!
+                      </a>
+                    </footer>
+                  </div>
                 </div>
               </div>
             </div>

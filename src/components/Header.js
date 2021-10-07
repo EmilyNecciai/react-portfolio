@@ -1,19 +1,30 @@
 //Needs to include Name and pull in Navigation component
-import React from 'react';
+import React, { useState } from 'react';
 import Navigation from "./Navigation";
+import About from "./About";
+import Contact from "./Contact";
+import Portfolio from "./Portfolio";
+import Resume from "./Resume";
 
 function Header() {
-  // const [categories] = useState([
-  //   { name: "about" },
-  //   { name: "contact" },
-  //   { name: "portfolio" },
-  //   { name: "resume" },
-  // ]);
+  const [currentPage, handlePageChange] = useState("About");
 
-  // const [currentCategory, setCurrentCategory] = useState(categories[0]);
+  // The renderPage method uses a switch statement to render the appropriate current page
+  const renderPage = () => {
+    switch (currentPage) {
+      case "About":
+        return <About />;
+      case "Portfolio":
+        return <Portfolio />;
+      case "Contact":
+        return <Contact />;
+      case "Resume":
+        return <Resume />;
 
-  // const [contactSelected, setContactSelected] = useState(false);
-
+      default:
+        return <About />;
+    }
+  };
 
   return (
     <div>
@@ -29,14 +40,15 @@ function Header() {
           </a>
         </div>
       </nav>
-
+      {/* Pass the state value and the setter as props to NavTabs */}
       <Navigation
-        // categories={categories}
-        // setCurrentCategory={setCurrentCategory}
-        // currentCategory={currentCategory}
-        // contactSelected={contactSelected}
-        // setContactSelected={setContactSelected}
-      ></Navigation>
+        currentPage={currentPage}
+        handlePageChange={handlePageChange}
+      />
+      {/* Call the renderPage function passing in the currentPage */}
+      <main>
+        <div>{renderPage(currentPage)}</div>
+      </main>
     </div>
   );
 }

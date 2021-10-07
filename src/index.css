@@ -1,17 +1,22 @@
 body {
   font-family: Work Sans;
   text-align: center;
+  background-color: aliceblue;
+
 }
 
-.navbar .navbar-brand {
+.navbar, .navbar-brand {
   text-align: center;
   display: block;
   width: 100%;
+  background-color: aliceblue;
+  
 }
 
 div.navbar-brand {
-  margin-top: 2em;
+  padding-top: 2em;
   margin-bottom: 2em;
+  
 }
 
 .navbar .navbar-brand > .navbar-item,
@@ -34,6 +39,11 @@ main {
 .label {
   text-align: left;
 }
+
+footer.footer {
+  background-color: rgb(255, 255, 255);
+}
+
 
 
 
