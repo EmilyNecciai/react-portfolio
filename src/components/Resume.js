@@ -11,12 +11,12 @@ function Resume() {
         <hr />
 
         <a
-          class="button is-primary"
-          href="/emily-mayeski-resume.pdf"
-          target="_blank"
+          className="button is-primary"
+          href={process.env.PUBLIC_URL + "/emily-mayeski-resume.pdf"}
+          target="_blank" rel="noreferrer"
         >
-          <span class="icon">
-            <i class="fas fa-download"></i>
+          <span className="icon">
+            <i className="fas fa-download"></i>
           </span>
           <span>Download My Resume</span>
         </a>

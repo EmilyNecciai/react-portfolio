@@ -11,8 +11,8 @@ function Project(props) {
             <div className="card">
               <div className="card-image">
                 <figure className="image is-4by3">
-                  <a href={project.live} target="_blank">
-                    <img src={project.image} alt="Placeholder image" />
+                  <a href={project.live} target="_blank" rel="noreferrer">
+                    <img src={process.env.PUBLIC_URL + project.image} alt="Placeholder image" />
                   </a>
                 </figure>
               </div>
@@ -35,12 +35,12 @@ function Project(props) {
                     <br />
                     NPM Packages: {project.packages}
                   </div>
-                  <div class="card">
-                    <footer class="card-footer">
+                  <div className="card">
+                    <footer className="card-footer">
                       <a
                         href={project.repo}
                         className="card-footer-item"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                       >
                         See the Repo!
                       </a>
@@ -48,7 +48,7 @@ function Project(props) {
                       <a
                         href={project.live}
                         className="card-footer-item"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                       >
                         See the Live Site!
                       </a>

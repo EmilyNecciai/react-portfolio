@@ -4,23 +4,23 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer class="footer">
-      <div class="content has-text-centered">
+    <footer className="footer">
+      <div className="content has-text-centered">
         <p>
           <strong>My Full Stack Development Portfolio</strong> - a React site by{" "}
-          <a href="https://github.com/EmilyNecciai" target="_blank">
+          <a href="https://github.com/EmilyNecciai" target="_blank" rel="noreferrer">
             Emily Necciai Mayeski
           </a>
           .
           <hr />
           <a
             href="https://www.linkedin.com/in/emilynecciai/"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             LinkedIn
           </a>{" "}
           |{" "}{" "}
-          <a href="https://www.ithnk.org/" target="_blank">
+          <a href="https://www.ithnk.org/" target="_blank" rel="noreferrer">
             Technical Writing Professional Site
           </a>
         </p>

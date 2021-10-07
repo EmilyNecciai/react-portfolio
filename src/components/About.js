@@ -7,7 +7,7 @@ function About() {
     <div>
       <p className="content is-medium">Technical Writer and Something-of-a Full Stack Developer</p>
       <hr />
-      <img className="my-pic" src={require(`/img/profile.jpg`).default}/>
+      <img className="my-pic" src={process.env.PUBLIC_URL + '/img/profile.jpg'} alt="Emily Necciai Mayeski"/>
       <p className="content is-italic mt-4">
         I'm Emily, a technical writer studying the full stack to better my work
         as a technical writer in the tech and SaaS fields.
