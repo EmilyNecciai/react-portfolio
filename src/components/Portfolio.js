@@ -21,8 +21,8 @@ const projects = [
     packages: "bcrypt, connect-session-sequelize, dotenv, express, express-handlebars, express-session, handlebars, mysql2, puppeteer, sequelize",
     image: "/img/quizam.png",
     description: "Allows instructors to quickly create quizzes and print the quiz to a PDF to distribute to their students, as well as keep a copy for themselves with the answer key!",
-    repo: "https://quizam.herokuapp.com/",
-    live: "https://github.com/EmilyNecciai/quizam",
+    live: "https://quizam.herokuapp.com/",
+    repo: "https://github.com/EmilyNecciai/quizam",
   },
   {
     id: 3,
