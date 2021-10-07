@@ -16,7 +16,7 @@ https://emilynecciai.github.io/react-portfolio/#about
 
 ### Preview 
 
-![Preview](https://github.com/EmilyNecciai/react-portfolio/blob/dc2b9ee2295b653e150581bec6e3e497fb0e90e5/public/img/reactportfolioscreenshot.png)
+![Preview](https://github.com/EmilyNecciai/react-portfolio/blob/ffa8eaa153eb51f5eeebaf3b3742d24f228c2684/public/img/reactportfolioscreenshot.png)
 
 
 ### Tech Used
