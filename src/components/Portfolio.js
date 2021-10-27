@@ -5,6 +5,16 @@ import Project from "./Project";
 
 const projects = [
   {
+    id: 0,
+    title: "PocketTraders",
+    languages: "react, jsx, css, js",
+    packages: "apollo-server-express, bcrypt, Express.js, graphql, if-env, jsonwebtoken, mongoose, nodemon, react-confirm-alert, react-popup-alert, uuid, concurrently",
+    image: "/img/pocket-traders.png",
+    description: "Allows you to trade pokemon and create a team. I did the design and front end!",
+    repo: "https://github.com/dbottoni/PokeTrader",
+    live: "https://pocket-traders.herokuapp.com/",
+  },
+  {
     id: 1,
     title: "TechTopics",
     languages: "html, handlebars, js",
