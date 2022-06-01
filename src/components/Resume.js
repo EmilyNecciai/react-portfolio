@@ -27,9 +27,10 @@ function Resume() {
         <ul>
             <li>HTML, CSS, Javascript</li>
             <li>OpenAPI, YAML, JSON</li>
+            <li>React, Next.js, Hugo</li>
             <li>Markdown</li>
             <li>Git</li>
-            <li>Github Repo</li>
+            <li>Github Repo Management</li>
         </ul>
       </div>
     </div>
