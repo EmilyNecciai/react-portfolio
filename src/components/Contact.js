@@ -6,21 +6,38 @@
 // WHEN I enter text into the email address field THEN I receive a notification if I have entered an invalid email address
 
 import React, { useState } from 'react';
-
+import { useForm, ValidationError } from '@formspree/react';
 import { validateEmail } from '../utils/helpers';
 
 function Contact() {
+  const [state, handleSubmit] = useForm("xknyyydk");
+
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });
 
   const [errorMessage, setErrorMessage] = useState('');
   const { name, email, message } = formState;
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (!errorMessage) {
-      console.log('Submit Form', formState);
-    }
-  };
+  // const handleSubmit = (e) => {
+  //   e.preventDefault();
+  //   if (!errorMessage) {
+  //     console.log('Submit Form', formState);
+  //   }
+  // };
+
+  function refreshPage() {
+    window.location.reload(false);
+  }
+
+
+  if (state.succeeded) {
+    return (
+      <div>
+        <p>Thanks for reaching out!</p>
+        <button className="button is-medium is-primary is-half m-6" onClick={refreshPage}>Submit New Form</button>
+      </div>
+    );
+}
+
 
   const handleChange = (e) => {
     if (e.target.name === 'email') {
