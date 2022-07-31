@@ -11,6 +11,7 @@ Module 20 challenge - An updated portfolio showcasing my full stack dev projects
 - [Questions](#questions)
 
 ### Live Site
+https://react-portfolio-nu-eight.vercel.app/
 https://emilynecciai.github.io/react-portfolio/#about
 
 
